@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # School Management System
 
 A Laravel-based School Management System with role-based access control (Admin, Teacher, Student).
@@ -65,3 +66,6 @@ Uses SQLite by default. For MySQL/PostgreSQL:
 ---
 
 **Ready to use! 🎉**
+=======
+# school-management-system-backend
+>>>>>>> 8aad81ebcd43f4fe8237d1e7b404032ab9091b15
