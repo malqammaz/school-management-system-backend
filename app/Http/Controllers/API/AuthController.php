@@ -18,7 +18,8 @@ class AuthController extends Controller
             'name'     => 'required|string',
             'email'    => 'required|email|unique:users,email',
             'password' => 'required|string|min:6',
-            'role'     => 'required|in:teacher,student'
+            'role'     => 'required|in:teacher,student',
+            'date_of_birth' => 'sometimes|date',
         ]);
 
         DB::beginTransaction();
@@ -29,6 +30,7 @@ class AuthController extends Controller
                 'email'    => $request->email,
                 'password' => Hash::make($request->password),
                 'role'     => $request->role,
+                'date_of_birth' => $request->date_of_birth,
             ]);
 
             if ($user->role === 'student') {
