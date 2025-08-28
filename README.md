@@ -10,7 +10,7 @@ A Laravel-based School Management System with role-based access control (Admin, 
 * Composer
 * Node.js
 
-### Installation (5 minutes)
+### Installation
 
 ```bash
 # 1. Clone and install
